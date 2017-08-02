@@ -2,10 +2,9 @@ var webpack = require('webpack')
 var path = require('path')
 var HtmlWebpackPlugin = require('html-webpack-plugin')
 var ExtractTextPlugin = require('extract-text-webpack-plugin')
-var CleanWebpackPlugin = require('clean-webpack-plugin');
+var CleanWebpackPlugin = require('clean-webpack-plugin')
 
 prod_state = process.env.NODE_ENV==="production"
-
 
 module.exports = {
     entry: {
@@ -58,6 +57,10 @@ module.exports = {
                     }
                 ],
             },
+            {
+                test: /\.json$/,
+                loader: 'json-loader'
+            }
         ]
     },
     devtool: 'source-map',
