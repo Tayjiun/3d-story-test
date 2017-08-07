@@ -43,6 +43,8 @@
     "fullpage.js": "^2.9.4",
     "jquery": "^3.2.1",
     "lazysizes": "^4.0.0-rc3",
-    "three": "^0.86.0"
+    "swiper": "^3.3.1",
+    "three": "^0.86.0",
+    "tween.js": "^16.6.0"
   }
 }
